@@ -1,0 +1,22 @@
+/bootstrap/compiled.php
+/vendor
+composer.phar
+composer.lock
+.env.local.php
+.env.php
+.DS_Store
+
+.project
+local.properties
+.classpath
+.settings/
+
+# PDT-specific
+.buildpath
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
