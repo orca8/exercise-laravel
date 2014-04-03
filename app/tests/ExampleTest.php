@@ -14,4 +14,11 @@ class ExampleTest extends TestCase {
 		$this->assertTrue($this->client->getResponse()->isOk());
 	}
 
+	public function testOverwriteRouting()
+	{
+		$crawler = $this->client->request('GET', '/');
+
+		$this->assertEquals('Overwrite routing!!', $this->client->getResponse()->getContent());
+	}
+
 }
