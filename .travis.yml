@@ -1,0 +1,19 @@
+# Uses travis-yaml to check your .travis.yml config.
+# http://lint.travis-ci.org/
+
+language: php
+
+php:
+  - 5.4
+  - 5.5
+
+before_script:
+  - curl -sS https://getcomposer.org/installer | php
+  - php composer.phar install --dev
+
+# command to be execute
+# case single line
+# script: [command]
+# case multi-line
+script:
+  - phpunit
