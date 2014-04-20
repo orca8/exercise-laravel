@@ -12,7 +12,9 @@ class AccountTableSeeder extends Seeder
             array(
                 'account_id' => 'admin',
                 'account_password' => Hash::make('admin'),
-                'account_name' => 'システム管理者'
+                'account_name' => 'システム管理者',
+                'created_at' => '2014-04-01 00:00:00',
+                'updated_at' => '2014-04-01 00:00:00'
             )
         );
         DB::table('account')->insert($account);
