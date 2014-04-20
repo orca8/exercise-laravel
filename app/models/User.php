@@ -39,4 +39,19 @@ class User extends Eloquent implements UserInterface {
 		return $this->account_password;
 	}
 
+    public function getRememberToken()
+    {
+        throw new ErrorException('not implemented');
+    }
+
+    public function setRememberToken($value)
+    {
+        throw new ErrorException('not implemented');
+    }
+
+    public function getRememberTokenName()
+    {
+        throw new ErrorException('not implemented');
+    }
+
 }
