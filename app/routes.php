@@ -20,3 +20,5 @@ Route::get('/', function()
 {
 	return 'Overwrite routing!!';
 });
+
+Route::get('user/{id}', 'UserController@index');
