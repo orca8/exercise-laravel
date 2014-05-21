@@ -93,6 +93,8 @@ return array(
 	|
 	*/
 
-	'attributes' => array(),
+	'attributes' => array(
+		'user_id' => 'account id'
+	),
 
 );
